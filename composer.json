@@ -1,0 +1,20 @@
+{
+    "name": "yohaw/pppr",
+    "description": "Prepare PHP Project Production Ready. This Extension about preparing PHP project production ready",
+    "type": "stable",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PPPR\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yohannes Zerihun",
+            "email": "johnpro3269@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv" : "^5.4"
+    }
+}
