@@ -1,0 +1,38 @@
+name: PHP Package CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.1' # specify the PHP version you are using
+
+    - name: Install dependencies
+      run: |
+        composer install
+
+    - name: Run tests
+      run: |
+        ./vendor/bin/phpunit # Replace with your test command, if different
+
+    - name: Generate PHPDocs
+      run: |
+        php vendor/bin/phpdoc
+
+    - name: Build project
+      run: |
+        composer build # If you have a build script defined in composer.json
