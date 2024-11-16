@@ -2,7 +2,7 @@
 
 namespace PPPR;
 
-use PPPR\helpers;
+use PPPR\Trait\helpers;
 use Dotenv\Dotenv;
 
 class App

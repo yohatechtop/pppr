@@ -1,6 +1,6 @@
 <?php 
 
-namespace PPPR;
+namespace PPPR\Trait;
 
 
 trait helpers
