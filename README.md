@@ -16,4 +16,4 @@ To use this project, you need to have Composer installed. Follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yohatechtop/pppr.git
-   cd production-ready-php
+   cd pppr
