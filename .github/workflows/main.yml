@@ -1,0 +1,45 @@
+name: PHP Package CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up PHP environment
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1' # Specify PHP version
+          tools: composer
+
+      # Install dependencies
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist --optimize-autoloader
+
+      # Run tests
+      - name: Run tests
+        run: ./vendor/bin/phpunit # Replace with your actual test command if different
+
+      # Generate PHPDocs
+      - name: Install phpDocumentor
+        run: composer require --dev phpdocumentor/phpdocumentor
+
+      - name: Generate PHPDocs
+        run: php ./vendor/bin/phpdoc
+
+      # Build the project
+      - name: Build project
+        run: |
+          composer build || echo "No build script found in composer.json"
