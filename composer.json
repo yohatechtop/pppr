@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "PPPR\\": "app/"
-        }
+        },
+        "files": ["Helper/app.php"]
     },
     "authors": [
         {
@@ -15,6 +16,6 @@
         }
     ],
     "require": {
-        "vlucas/phpdotenv" : "^5.4"
+        "vlucas/phpdotenv" : "5.4"
     }
 }

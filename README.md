@@ -1,5 +1,21 @@
 # PPPR - Prepare PHP Project Production Ready
 
+[![Latest Version](https://img.shields.io/packagist/v/yohaw/pppr.svg)](https://packagist.org/packages/yohaw/pppr)
+[![License](https://img.shields.io/github/license/yohatechtop/pppr.svg)](LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/yohatechtop/pppr/CI?label=build)](https://github.com/yohatechtop/pppr/actions)
+[![Total Downloads](https://img.shields.io/packagist/dt/yohaw/pppr.svg)](https://packagist.org/packages/yohaw/pppr)
+
+
+[![PHP Package CI](https://github.com/yohatechtop/pppr/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/yohatechtop/pppr/actions/workflows/main.yml)
+
+## Description
+
+`PPPR` is a PHP package that helps you prepare your PHP project for production. It handles tasks such as setting up configuration files, copying `.env` files, and preparing your project structure, making it easier to deploy to a production environment.
+
+
+
+# PPPR - Prepare PHP Project Production Ready
+
 `PPPR` is a PHP package that helps you prepare your PHP project for production. It handles tasks such as setting up configuration files, copying `.env` files, and preparing your project structure, making it easier to deploy to a production environment.
 
 ## Features
@@ -101,18 +117,6 @@ Once the version is updated, other projects can use `composer update` to pull in
 ```bash
 composer update yohaw/pppr
 ```
-
-This will install the updated version in your project.
-
-## Contributing
-
-If you'd like to contribute to this project, feel free to fork the repository, make changes, and submit a pull request. All contributions are welcome!
-
-- Fork the repo
-- Create a new branch (`git checkout -b feature-branch`)
-- Commit your changes (`git commit -am 'Add new feature'`)
-- Push to the branch (`git push origin feature-branch`)
-- Open a pull request
 
 ## License
 

@@ -7,7 +7,7 @@ The LICENSE file contains the legal terms under which the project is made availa
 
 MIT License
 
-Copyright (c) [year] [your name or organization]
+Copyright (c) 2024 Yohannes Zerihun
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
