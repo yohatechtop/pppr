@@ -25,7 +25,7 @@ class App
         $this->configPath = $configPath;
     }
 
-    /**
+    /**   
      * Generate or update the .env.example file
      */
     public function generateEnvExample()
