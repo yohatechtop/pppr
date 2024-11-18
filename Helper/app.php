@@ -4,7 +4,7 @@ use PPPR\App;
 
 // Helper functions will be here
 
-if (!function_exists('run')) {
+if (!function_exists('run_pppr')) {
     /**
      * Run the application by loading environment and configuration files.
      * 
@@ -12,7 +12,7 @@ if (!function_exists('run')) {
      * @param string|null $config  Path to the configuration file (default: 'config.php').
      * @return void
      */
-    function run(?string $envex = '.env.example', ?string $config = 'config.php'): void
+    function run_pppr(?string $envex = '.env.example', ?string $config = 'config.php'): void
     {
         // Load the App from the PPPR namespace and prepare for production
         $app = new App($envex, $config);
