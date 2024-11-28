@@ -1,8 +1,8 @@
 # PPPR - Prepare PHP Project Production Ready
 
 [![Latest Version](https://img.shields.io/packagist/v/yohaw/pppr.svg)](https://packagist.org/packages/yohaw/pppr)
-[![License](https://img.shields.io/github/license/yohatechtop/pppr.svg)](LICENSE)
 [![Build Status](https://img.shields.io/github/workflow/status/yohatechtop/pppr/CI?label=build)](https://github.com/yohatechtop/pppr/actions)
+[![License](https://img.shields.io/github/license/yohatechtop/pppr.svg)](LICENSE)
 [![Total Downloads](https://img.shields.io/packagist/dt/yohaw/pppr.svg)](https://packagist.org/packages/yohaw/pppr)
 
 
